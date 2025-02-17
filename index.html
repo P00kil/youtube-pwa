@@ -7,16 +7,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="manifest" href="manifest.json">
     <title>YouTube PWA</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        button { padding: 10px 20px; font-size: 18px; background: red; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
 </head>
 <body>
     <h1>YouTube PWA</h1>
-    <p>Wird in 5 Sekunden weitergeleitet...</p>
-    <p>Füge schnell die wpa zum Homebildschirm hinzu</p>
+    <p>Tippe unten, um YouTube zu öffnen:</p>
+    <button onclick="goToYouTube()">YouTube starten</button>
 
     <script>
-        setTimeout(function() {
+        function goToYouTube() {
             window.location.href = "https://m.youtube.com";
-        }, 5000); // 5 sekunden verzögerung
+        }
     </script>
 </body>
 </html>
